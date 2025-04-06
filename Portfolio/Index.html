@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar fadeInUp navbar-expand-lg navbar-dark fixed-top sticky">
+        <div class="container">
+            <a class="navbar-brand text-dark fs-1 fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >s
+               
+                
+                <span class="navbar-toggler"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-5">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#resume">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop id="bg-video">
+            <source src="hero-bg.mp4" type="video/mp4">
+        </video>
+    
+        <div class="container text-white">
+            <div class="row align-items-center">
+                <!-- Left Column: Welcome Text -->
+                <div class="col-lg-6 col-md-12 text-start">
+
+                    <h1 class="txtcl fade-in">Hi,I'm Uday Kiran</h1>
+                    <h1 class="txtcl fade-in">Welcome to My Portfolio</h1>
+                    <p class="txtcl fade-in">I'm passionate about building amazing websites and applications.</p>
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                </div>
+               
+                    
+                    <div class="col-lg-6 col-md-12 text-end">
+                        <p class="typing-text">I am  <br/> <span id="typing" class="text-dark"></span></p>
+                    </div>
+             
+    
+                <!-- Right Column: Typing Effect -->
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section class="about-me bg-white" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column - Profile Image -->
+                <div class="col-lg-5 text-center">
+                    <img src="udaykiran.jpg" alt="Uday Kiran" class="rounded img-fluid profile-img w-70 h-70">
+                </div>
+                <!-- Right Column - About Text -->
+                <div class="abt col-lg-7 fade-in">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm <span class="highlight">Uday Kiran</span>, a passionate developer with a love for 
+                        crafting innovative and visually stunning websites. I specialize in front-end and back-end development, 
+                        always eager to learn and improve.
+                    </p>
+                    <p>
+                        My goal is to create <span class="highlight">amazing digital experiences</span> that leave a lasting impression.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-dark">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="resume border" id="resume">
+        <div class="container">
+            <h2 class="section-title  text-center">My <span class="rsm">Resume</span></h2>
+            
+            <div class="row">
+                <!-- Education Colum n -->
+                <div class=" card col-sm-4 border ">
+                    <div class="card-body resume-box">
+                        <h3 id="hl">Education</h3>
+                        <ul>
+                            <li>
+                                <h4>Bachelor’s in Computer Science</h4>
+                                <p>CBIT University, 2024 - 2027</p>
+                            </li>
+                            <hr/>
+                            <li>
+                                <h4 class="text-capitalize">Diploma in computer science and engineering</h4>
+                                <p>Government institute of Electronics College, 2021 - 2024</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Skills Column -->
+                <div class="card col-md-4">
+                    <div class=" card-body resume-box">
+                        <h3 id="hl">Skills</h3>
+                        <ul>
+                            <li>Front-End: HTML, CSS, JavaScript, React.js, Bootstrap</li>
+                            <div class="progress m-3">
+                                <div class="progress-bar" data-width="85%">85%</div>
+                            </div>
+                            <hr/>
+                            <li>Back-End: Node.js, Express.js, MongoDB, SQL</li>
+                            <div class="progress m-3">
+                                <div class="progress-bar" data-width="85%">85%</div>
+                            </div>
+                            <hr>
+                            <li>Tools: Git, GitHub, Docker, Firebase</li>
+                            <div class="progress m-3">
+                                <div class="progress-bar" data-width="80%">80%</div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Expertise Column -->
+                <div class="card col-md-4">
+                    <div class=" card-body ">
+                        <h3 id="hl">Expertise</h3>
+                        <ul>
+                            <li>Full-Stack Web Development</li>
+                            <li>UI/UX Design & Prototyping</li>
+                            <li>API Development & Integration</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+<section class="freelance-section text-center h-25">
+    <div class="container">
+        <h2 class="section-title">I Am Available for Freelance Work!</h2>
+        <p class="freelance-text">If you need a creative and dedicated developer to bring your ideas to life, let's collaborate! I specialize in front-end and back-end development to craft high-quality digital experiences.</p>
+        <a href="#contact" class="btn btn-primary btn-lg hire-me">Hire Me</a>
+    </div>
+</section>
+
+    
+
+    <!-- <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Front-End Development</h3>
+                    <p>HTML, CSS, JavaScript, Bootstrap, React.js</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="90%">90%</div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <i class="bi bi-server"></i>
+                    <h3>Back-End Development</h3>
+                    <p>Node.js, Express.js, MongoDB, SQL</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="85%">85%</div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <i class="bi bi-brush"></i>
+                    <h3>UI/UX & Design</h3>
+                    <p>Figma, Adobe XD, Canva</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="75%">75%</div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <i class="bi bi-gear"></i>
+                    <h3>Other Tools & Technologies</h3>
+                    <p>Git, GitHub, Firebase, Docker</p>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="80%">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    
+    
+    <section class="portfolio bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="row ">
+                
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="bk.webp" alt="Book Bazaar">
+                        <div class="overlay">
+                            <h3>Book Bazaar</h3>
+                            <p>A real-time book catalog system with reviews and inventory tracking.</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img src="rt.jpg" alt="Social Media App">
+                        <div class="overlay">
+                            <h3>Real Time Chat App</h3>
+                            <p>A feature-rich social platform with live chat and post sharing.</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item">
+                        <img class="" src="ttt.png"  alt="Online Tic-Tac-Toe">
+                        <div class="overlay ">
+                            <h3>Online Tic-Tac-Toe</h3>
+                            <p>Multiplayer Tic-Tac-Toe with real-time gameplay.</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="portfolio-item">
+                        <img src="tdl.jpg" alt="To-Do List App">
+                        <div class="overlay">
+                            <h3>To-Do List App</h3>
+                            <p>A simple yet powerful task manager built with JavaScript, allowing users to add, edit, and organize daily tasks efficiently.</p>
+                            <a href="#" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+    
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section class="awards-certifications" id="awards">
+        <div class="container">
+            <h2 class="section-title text-center">Awards & Certifications</h2>
+            
+            <div class="row">
+                <!-- Certification 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box">
+                        <i class="bi bi-award"></i>
+                        <h4>MERN stack</h4>
+                        <p>Issued by TuteDude | 2024</p>
+                        <a class="view-project" href="https://drive.google.com/file/d/1CbxdzQcv4iLaKqdLQgzUUDNRm4MwOdm-/view?usp=sharing">view</a>
+                    </div>
+                </div>
+    
+                <!-- Certification 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box">
+                        <i class="bi bi-trophy"></i>
+                        <h4>Hackathon Winner</h4>
+                        <p>CBIT Open Source | 2024</p>
+                    </div>
+                </div>
+    
+                <!-- Certification 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box">
+                        <i class="bi bi-patch-check"></i>
+                        <h4>Artificial Intelligence
+                           
+                            </h4>
+                        <p>Issued by Internship Studio | 2023</p>
+                        <a class="view-project" href="https://drive.google.com/file/d/1xTTnmDjW8EZFnZFZD_GIK_Dpgu-neufu/view?usp=sharing">view</a>
+                    </div>
+                </div>
+    
+                <!-- Certification 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="certification-box">
+                        <i class="bi bi-mortarboard"></i>
+                        <h4>
+                            programming in Modern C++</h4>
+                        <p>Issued by NPTEL | 2023</p>
+                        <a class="view-project" href="https://drive.google.com/file/d/1MLAql_prt85RsDt96qe9ccXBMEeiHdxv/view?usp=sharing">view</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+
+
+    <section class="contact bg-light" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-description">Feel free to reach out for collaborations or just a friendly chat! 🚀</p>
+    
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/xanedkoz" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">Send Message</button>
+                </form>
+            </div>
+            
+    
+            <!-- Social Media Links -->
+            
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Uday Kiran. All Rights Reserved.</p>
+                <div class="text-center">Follow me on</div>
+                <div class="social-links d-flex justify-content-center gap-3 bg-dark">
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="social-icon">
+                        <img width="35" height="35" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                                        </a>
+                    <a href="https://instagram.com/yourusername" target="_blank" rel="noopener" class="social-icon">
+                        <i class="bi bi-instagram"><img width="35" height="35" src="https://img.icons8.com/fluency/240/instagram-new.png" alt="instagram-new"/> </i>
+                    </a>
+                    <a href="https://facebook.com/yourusername" target="_blank" rel="noopener" class="social-icon">
+                        <i class="bi bi-facebook"><img width="35" height="35" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" class="social-icon">
+                        <i class="bi bi-twitter-x"><img width="35" height="35" src="https://img.icons8.com/ios-filled/100/twitterx--v1.png" alt="twitterx--v1"/></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up">&uparrow;</i></button>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

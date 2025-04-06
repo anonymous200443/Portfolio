@@ -1,0 +1,705 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.floating-image img {
+    width: 250px; /* Adjust size */
+    border-radius: 1%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.navbar{
+    color:#151617;
+    /* border:1px solid black; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(8px);
+
+   
+    
+}
+
+/* Hero Section */
+/* Hero Section */
+.txtcl{
+    color:#0b0b0b;
+
+}
+.nav-item:hover{
+    border-bottom: 2px solid black;
+
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Video */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0.8; /* Adjust for visibility */
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+
+
+}
+
+/* Content Styling */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Left & Right Column Alignment */
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+/* Typing Effect */
+.typing-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #121213;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#typing {
+    font-weight: bold;
+    color: black;
+}
+
+#typing::after {
+    content: '|';
+    display: inline-block;
+    animation: blink 0.8s infinite;
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 1.0s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hl{
+    color:rgb(197, 23, 165);
+}
+
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 1.0s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Change Navbar Background on Scroll */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+}
+/* Active Link Style */
+.navbar .nav-link.active {
+    color: black !important;
+    font-weight: bold;
+    
+}
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+/* Active Section Link Underline */
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+.bg1{
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #121213;
+    color:white
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Background Colors for Sections */
+#home { background: rgba(0, 0, 0, 0.7); }
+#about { background: #222; }
+#portfolio { background: #444; }
+#contact { background: #666; }
+
+
+
+/* About Me Section */
+/* About Me Section */
+.about-me {
+    padding: 80px 0;
+    text-align: left;
+    background: #f4f4f4;
+    color: #f8f5f5;
+   
+}
+
+.abt{
+    background-image: url(bg2.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+/* About Me Title */
+.about-me h2 {
+    font-size: 2.5rem;
+    
+
+
+}
+
+/* Profile Image */
+.profile-img {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Keep it square */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  
+}
+
+/* Hover Effect */
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Highlighted Text */
+.highlight {
+    font-weight: bold;
+    color: black;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Button */
+.btn-about {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ffcc00;
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-about:hover {
+    background: #ffdb4d;
+    transform: scale(1.1);
+}
+
+
+/* Skills Section */
+/* Skills Section */
+#resume {
+    padding: 80px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+.rsm{
+    color:blue;
+}
+
+/* Progress Bar Container */
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Progress Bar Animation */
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: width 3s ease-in;
+}
+
+
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Portfolio Card */
+.portfolio-item {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.6); /* Light Blue Shadow */
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Hover Effect */
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(173, 216, 230, 0.8); /* Stronger Light Blue Shadow */
+}
+
+/* Overlay */
+.overlay {
+    padding: 20px;
+    text-align: center;
+}
+
+.overlay h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* View Project Button */
+.view-project {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-project:hover {
+    background-color: #0056b3;
+}
+
+
+/* View Project Button */
+.view-project {
+    background: #ffcc00;
+    color: #222;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-project:hover {
+    background: #ffaa00;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+/* Send Button */
+.btn-send {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+    background: #ffaa00;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
+}
+/* Footer Section */
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 90%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background: #ffaa00;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Social Media Hover Colors */
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon:nth-child(1):hover { color: #0a66c2; } /* LinkedIn */
+.social-icon:nth-child(2):hover { color: #e4405f; } /* Instagram */
+.social-icon:nth-child(3):hover { color: #1877f2; } /* Facebook */
+.social-icon:nth-child(4):hover { color: #000000; } /* X (Twitter) */
+
+
+
+.awards-certifications {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.certification-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Light blue shadow */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-box:hover {
+    transform: translateY(-5px);
+}
+
+.certification-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.certification-box h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.certification-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.freelance-section {
+    padding: 50px 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.freelance-text {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.hire-me {
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    background: white;
+    color: #6a11cb;
+    transition: all 0.3s ease-in-out;
+}
+
+.hire-me:hover {
+    background: #ff4d6d;
+    color: white;
+    transform: scale(1.1);
+}
+
